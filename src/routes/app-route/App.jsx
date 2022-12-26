@@ -1,13 +1,13 @@
 import React from "react";
 import "./app-route.style.less";
 import { MetaTags } from "react-meta-tags";
-import Spinner from "../../Components/Spinner";
-import TopBar from "../../Components/TopBar";
-import NavBar from "../../Components/NavBar";
-import Footer from "../../Components/Footer";
-import Copyright from "../../Components/Copyright";
+import Spinner from "Components/Spinner";
+import TopBar from "Components/TopBar";
+import NavBar from "Components/NavBar";
+import Footer from "Components/Footer";
+import Copyright from "Components/Copyright";
 import { BackTop } from "antd";
-import Container from "../../Components/Container";
+import Container from "Components/Container";
 
 const App = () => {
     return (
