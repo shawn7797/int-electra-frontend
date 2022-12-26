@@ -3,7 +3,6 @@ import "./app-route.style.less";
 import { MetaTags } from "react-meta-tags";
 import Spinner from "Components/Spinner";
 import TopBar from "Components/TopBar";
-import NavBar from "Components/NavBar";
 import Footer from "Components/Footer";
 import Copyright from "Components/Copyright";
 import { BackTop } from "antd";
@@ -24,7 +23,6 @@ const App = () => {
             </MetaTags>
             {/* <Spinner /> */}
             <TopBar />
-            <NavBar />
             <Container />
             <Footer />
             <Copyright />
