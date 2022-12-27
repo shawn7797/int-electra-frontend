@@ -7,6 +7,7 @@ import Footer from "Components/Footer";
 import Copyright from "Components/Copyright";
 import { BackTop } from "antd";
 import Container from "Components/Container";
+import MyNavbar from "Components/MyNavbar";
 
 const App = () => {
     return (
@@ -23,6 +24,7 @@ const App = () => {
             </MetaTags>
             {/* <Spinner /> */}
             <TopBar />
+            <MyNavbar />
             <Container />
             <Footer />
             <Copyright />
