@@ -117,7 +117,7 @@ h6,
 .navbar .navbar-brand {
     position: relative;
     padding-right: 50px;
-    height: 75px;
+    height: 77px;
     display: flex;
     align-items: center;
     background: var(--primary);
@@ -158,7 +158,7 @@ h6,
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
@@ -219,7 +219,7 @@ h6,
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -505,7 +505,7 @@ h6,
 }
 
 .project-item:hover .project-title,
-.project-carousel .owl-item.center .project-title  {
+.project-carousel .owl-item.center .project-title {
     bottom: -60px;
 }
 
@@ -597,6 +597,7 @@ h6,
 }
 
 @media (min-width: 768px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
@@ -604,6 +605,7 @@ h6,
 }
 
 @media (min-width: 992px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
@@ -642,7 +644,7 @@ h6,
 }
 
 .testimonial-carousel .testimonial-img img {
-    width: 100px;
+    width: 100px !important;
     height: 100px;
 }
 

@@ -1,26 +1,28 @@
 import React from "react";
-import Carousel from "../Components/Carousel";
-import AboutSection from "../Components/AboutSection";
-import Facts from "../Components/Facts";
-import Features from "../Components/Features";
-import VideoModal from "../Components/VideoModal";
-import Service from "../Components/Service";
-import Projects from "../Components/Projects";
-import Team from "../Components/Team";
-import Testimonials from "../Components/Testimonials";
+import {
+    BrowserRouter as Router,
+    Redirect,
+    Route,
+    Switch,
+} from "react-router-dom";
+import TeamRoute from "routes/team-route/team.route";
+import About from "./About";
+import LandingPage from "./LandingPage";
+import Projects from "./Projects";
+import Service from "./Service";
+import Testimonials from "./Testimonials";
 
 const Container = () => {
     return (
         <div className="container-wrapper" style={{ marginTop: "-8vw" }}>
-            <Carousel />
-            <AboutSection />
-            <Facts />
-            <Features />
-            <VideoModal />
-            <Service />
-            <Projects />
-            <Team />
-            <Testimonials />
+            <Router>
+                <Switch>
+                    <Route exact path="/" component={LandingPage} />
+                    <Route exact path="/about" component={About} />
+                    <Route exact path="/services" component={Service} />
+                    <Route exact path="/team" component={TeamRoute} />
+                </Switch>
+            </Router>
         </div>
     );
 };

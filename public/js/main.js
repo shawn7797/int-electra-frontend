@@ -1,5 +1,7 @@
 (function ($) {
     "use strict";
+    window.console&&console.log('foo');
+
 
     // Spinner
     var spinner = function () {

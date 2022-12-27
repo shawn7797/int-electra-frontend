@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./app-route.style.less";
 import { MetaTags } from "react-meta-tags";
 import Spinner from "Components/Spinner";
@@ -8,8 +8,17 @@ import Copyright from "Components/Copyright";
 import { BackTop } from "antd";
 import Container from "Components/Container";
 import MyNavbar from "Components/MyNavbar";
+import $ from "jquery";
+
+window.$ = $
 
 const App = () => {
+    useEffect(() => {
+        setInterval(() => {
+            // document.querySelector("#spinner").classList.remove("show");
+        }, 450);
+    }, []);
+
     return (
         <div className="app-route-wrapper">
             <MetaTags>
