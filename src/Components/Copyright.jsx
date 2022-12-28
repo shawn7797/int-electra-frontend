@@ -7,14 +7,14 @@ const Copyright = () => {
                 <p class="mb-2">
                     Copyright &copy;{" "}
                     <a class="fw-semi-bold" href="#">
-                        Your Site Name
+                        INT ELECTRA
                     </a>
-                    , All Right Reserved.
+                    <span> {new Date().getFullYear()}</span>
                 </p>
                 <p class="mb-0">
                     Designed By{" "}
-                    <a class="fw-semi-bold" href="https://htmlcodex.com">
-                        HTML Codex
+                    <a class="fw-semi-bold" href="https://shawn7797.github.io/">
+                        Shawn Mathias
                     </a>
                 </p>
             </div>

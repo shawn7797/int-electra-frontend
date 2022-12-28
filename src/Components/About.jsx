@@ -26,7 +26,7 @@ const About = () => {
                         About Us
                     </p>
                     <h1 class="display-5 mb-4">
-                        We Are Leader In Industrial Market
+                        Highly experienced Engineers and Contractors
                     </h1>
                     <p class="mb-4">
                         Tempor erat elitr rebum at clita. Diam dolor diam

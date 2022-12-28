@@ -10,7 +10,7 @@ const TopBar = () => {
                         <a className="btn btn-link text-light" href="">
                             <i className="fab fa-facebook-f"></i>
                         </a>
-                        <a className="btn btn-link text-light" href="">
+                        <a className="btn btn-link text-light" href="">s
                             <i className="fab fa-twitter"></i>
                         </a>
                         <a className="btn btn-link text-light" href="">
@@ -19,7 +19,10 @@ const TopBar = () => {
                         <a className="btn btn-link text-light" href="">
                             <i className="fab fa-instagram"></i>
                         </a>
-                        <a className="btn btn-link text-light" href="">
+                        <a
+                            className="btn btn-link text-light"
+                            href="mailto:reagendsouza@yahoo.com"
+                        >
                             <i class="bi-envelope-fill"></i>
                         </a>
                     </div>

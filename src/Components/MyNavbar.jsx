@@ -37,9 +37,9 @@ const MyNavbar = () => {
                             <a href="project.html" className="dropdown-item">
                                 Projects
                             </a>
-                            <a href="/features" className="dropdown-item">
+                            {/* <a href="/features" className="dropdown-item">
                                 Features
-                            </a>
+                            </a> */}
                             <a href="/team" className="dropdown-item">
                                 Our Team
                             </a>

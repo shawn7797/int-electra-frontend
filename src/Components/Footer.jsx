@@ -11,14 +11,20 @@ const Footer = () => {
                     <div className="col-lg-3 col-md-6">
                         <h5 className="text-white mb-4">Our Office</h5>
                         <p className="mb-2">
-                            <i className="fa fa-map-marker-alt me-3"></i>123 Street,
-                            New York, USA
+                            <i className="fa fa-map-marker-alt me-3"></i>Shop
+                            No. 6,
+                            <br /> (Back Side) Mariano Apartments, Dongrim Rd.,
+                            <br />
+                            Navelim, Salcete,
+                            <br /> Goa 403 707
                         </p>
                         <p className="mb-2">
-                            <i className="fa fa-phone-alt me-3"></i>+012 345 67890
+                            <i className="fa fa-phone-alt me-3"></i>
+                            +919226269036
                         </p>
                         <p className="mb-2">
-                            <i className="fa fa-envelope me-3"></i>info@example.com
+                            <i className="fa fa-envelope me-3"></i>
+                            reagendsouza@yahoo.com
                         </p>
                         <div className="d-flex pt-3">
                             <a
@@ -49,19 +55,19 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-3 col-md-6">
                         <h5 className="text-white mb-4">Quick Links</h5>
-                        <a className="btn btn-link" href="">
+                        <a className="btn btn-link" href="/about">
                             About Us
                         </a>
-                        <a className="btn btn-link" href="">
+                        <a className="btn btn-link" href="contact.html">
                             Contact Us
                         </a>
-                        <a className="btn btn-link" href="">
+                        <a className="btn btn-link" href="/services">
                             Our Services
                         </a>
-                        <a className="btn btn-link" href="">
-                            Terms & Condition
+                        <a className="btn btn-link" href="/terms">
+                            Terms & Conditions
                         </a>
-                        <a className="btn btn-link" href="">
+                        <a className="btn btn-link" href="/support">
                             Support
                         </a>
                     </div>

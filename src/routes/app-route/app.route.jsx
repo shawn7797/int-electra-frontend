@@ -10,7 +10,7 @@ import Container from "Components/Container";
 import MyNavbar from "Components/MyNavbar";
 import $ from "jquery";
 
-window.$ = $
+window.$ = $;
 
 const App = () => {
     useEffect(() => {
@@ -37,7 +37,7 @@ const App = () => {
             <Container />
             <Footer />
             <Copyright />
-            <BackTop className="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top" />
+            <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
         </div>
     );
 };
