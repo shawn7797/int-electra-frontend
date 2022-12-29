@@ -22,9 +22,8 @@ const Carousel = () => {
                                         <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">
                                             25 Years of Working Experience
                                         </p>
-                                        <h1 class="display-1 text-white mb-5 animated slideInRight">
-                                            Industrial Solution Providing
-                                            Company
+                                        <h1 class="display-4 text-white mb-5 animated slideInRight">
+                                            I R P SYSTEMS
                                         </h1>
                                         {/* <a
                                             href=""
@@ -50,7 +49,7 @@ const Carousel = () => {
                                         <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">
                                             25 Years of Working Experience
                                         </p>
-                                        <h1 class="display-1 text-white mb-5 animated slideInRight">
+                                        <h1 class="display-4 text-white mb-5 animated slideInRight">
                                             The Best Reliable Industry Solution
                                         </h1>
                                         {/* <a

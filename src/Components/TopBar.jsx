@@ -7,7 +7,10 @@ const TopBar = () => {
                 <div className="col-lg-6 ps-5 text-start">
                     <div className="h-100 d-inline-flex align-items-center text-white">
                         <span>Follow Us:</span>
-                        <a className="btn btn-link text-light" href="">
+                        <a
+                            className="btn btn-link text-light"
+                            href="https://www.facebook.com/settings?tab=profile&section=username"
+                        >
                             <i className="fab fa-facebook-f"></i>
                         </a>
                         <a className="btn btn-link text-light" href="">

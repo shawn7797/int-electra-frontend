@@ -37,7 +37,7 @@ const Footer = () => {
                             </a>
                             <a
                                 className="btn btn-square btn-primary rounded-circle me-2"
-                                href=""
+                                href="https://www.facebook.com/settings?tab=profile&section=username"
                             >
                                 <i className="fab fa-facebook-f"></i>
                             </a>

@@ -21,8 +21,8 @@ const ContactUs = () => {
                                     <i class="fa fa-phone-alt fa-2x text-primary"></i>
                                 </div>
                                 <h4 class="mb-3">Phone Number</h4>
-                                <a href="tel:+919226269036"><p class="mb-2">+919226269036</p></a>
-                                <p class="mb-4">+919923951460</p>
+                                <a href="tel:+919226269036"><p class="mb-2 contact-us-number">+919226269036</p></a>
+                                <p class="mb-4 contact-us-number">+919923951460</p>
                             </div>
                             <div>
                                 <a
@@ -89,7 +89,7 @@ const ContactUs = () => {
                                     <br />
                                     Salcete, Goa 403 707
                                 </p>
-                                <a href="tel:+919226269036"><p class="mb-4">+919226269036</p></a>
+                                <a href="tel:+919226269036"><p class="mb-4 contact-us-number">+919226269036</p></a>
                             </div>
                             <div>
                                 <a
