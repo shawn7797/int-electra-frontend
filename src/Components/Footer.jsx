@@ -18,10 +18,12 @@ const Footer = () => {
                             Navelim, Salcete,
                             <br /> Goa 403 707
                         </p>
-                        <p className="mb-2">
-                            <i className="fa fa-phone-alt me-3"></i>
-                            +919226269036
-                        </p>
+                        <a href="tel:+919226269036">
+                            <p class="mb-2">
+                                <i class="fa fa-phone-alt me-3"></i>
+                                +919226269036
+                            </p>
+                        </a>
                         <p className="mb-2">
                             <i className="fa fa-envelope me-3"></i>
                             reagendsouza@yahoo.com

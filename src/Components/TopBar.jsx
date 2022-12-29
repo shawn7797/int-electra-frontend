@@ -10,7 +10,7 @@ const TopBar = () => {
                         <a className="btn btn-link text-light" href="">
                             <i className="fab fa-facebook-f"></i>
                         </a>
-                        <a className="btn btn-link text-light" href="">s
+                        <a className="btn btn-link text-light" href="">
                             <i className="fab fa-twitter"></i>
                         </a>
                         <a className="btn btn-link text-light" href="">
@@ -32,7 +32,13 @@ const TopBar = () => {
                         <span className="fs-5 fw-bold me-2">
                             <i className="fa fa-phone-alt me-2"></i>Call Us:
                         </span>
-                        <span className="fs-5 fw-bold">+919226269036</span>
+                        <a
+                            className="fs-5 fw-bold"
+                            href="tel:+919226269036"
+                            style={{ color: "#fff" }}
+                        >
+                            <span className="fs-5 fw-bold">+919226269036</span>
+                        </a>
                     </div>
                 </div>
             </div>

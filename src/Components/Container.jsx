@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import TeamRoute from "routes/team-route/team.route";
 import About from "./About";
+import ContactUs from "./ContactUs";
 import LandingPage from "./LandingPage";
 import Projects from "./Projects";
 import Service from "./Service";
@@ -21,6 +22,7 @@ const Container = () => {
                     <Route exact path="/about" component={About} />
                     <Route exact path="/services" component={Service} />
                     <Route exact path="/team" component={TeamRoute} />
+                    <Route exact path="/contactUs" component={ContactUs} />
                 </Switch>
             </Router>
         </div>

@@ -6,16 +6,20 @@ const Team = () => {
             name: "Robert D'Souza",
             role: "CEO & Founder",
             image: "images/Team/Robert-D'Souza.jpeg",
+            facebook: "https://www.facebook.com/robert.dsouza.3781",
+            email: "reagendsouza@yahoo.com",
         },
         {
             name: "Salim Almekar",
             role: "Project Manager",
             image: "images/Team/Salim-Almekar.jpeg",
+            facebook: "https://www.facebook.com/profile.php?id=100008432070346",
         },
         {
             name: "Gouse Almekar",
             role: "CIDC Trained Supervisor",
             image: "/images/Team/Gouse-Almekar.jpeg",
+            facebook: "https://www.facebook.com/gouse.almelkar.3",
         },
     ];
 
@@ -25,9 +29,6 @@ const Team = () => {
                 <div
                     class="text-center mx-auto wow fadeInUp"
                     data-wow-delay="0.1s"
-                    style={{
-                        // maxWidth: "600px",
-                    }}
                 >
                     <p class="fw-medium text-uppercase text-primary mb-2">
                         Our Team
@@ -41,7 +42,11 @@ const Team = () => {
                             data-wow-delay="0.1s"
                         >
                             <div class="team-item">
-                                <img class="img-fluid" src={i.image} alt={i.name} />
+                                <img
+                                    class="img-fluid"
+                                    src={i.image}
+                                    alt={i.name}
+                                />
                                 <div class="d-flex">
                                     <div
                                         class="flex-shrink-0 btn-square bg-primary"
@@ -65,11 +70,22 @@ const Team = () => {
                                         <div class="team-social">
                                             <a
                                                 class="btn btn-square btn-dark rounded-circle mx-1"
-                                                href=""
+                                                href={i.facebook}
                                             >
                                                 <i class="fab fa-facebook-f"></i>
                                             </a>
-                                            <a
+                                            {i.email && (
+                                                <a
+                                                    class="btn btn-square btn-dark rounded-circle mx-1"
+                                                    href={`mailto:${i.email}`}
+                                                >
+                                                    <i
+                                                        class="fa fa-envelope"
+                                                        aria-hidden="true"
+                                                    ></i>
+                                                </a>
+                                            )}
+                                            {/* <a
                                                 class="btn btn-square btn-dark rounded-circle mx-1"
                                                 href=""
                                             >
@@ -80,7 +96,7 @@ const Team = () => {
                                                 href=""
                                             >
                                                 <i class="fab fa-instagram"></i>
-                                            </a>
+                                            </a> */}
                                         </div>
                                     </div>
                                 </div>

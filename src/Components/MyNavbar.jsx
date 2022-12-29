@@ -1,6 +1,16 @@
 import React from "react";
 
 const MyNavbar = () => {
+    const activeLink =
+        window.location.pathname.split("/")[
+            window.location.pathname.split("/").length - 1
+        ];
+    const isActiveLink = (link) => activeLink == link;
+
+    const getActiveLink = (link) =>
+        isActiveLink(link) ? "nav-item nav-link active" : "nav-item nav-link";
+
+    console.log("activeLink: ", activeLink);
     return (
         <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
             <a href="/" className="navbar-brand ps-5 me-0">
@@ -16,19 +26,23 @@ const MyNavbar = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarCollapse">
                 <div className="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="/" className="nav-item nav-link active">
+                    <a href="/" className={getActiveLink("")}>
                         Home
                     </a>
-                    <a href="/about" className="nav-item nav-link">
+                    <a href="/about" className={getActiveLink("about")}>
                         About
                     </a>
-                    <a href="/services" className="nav-item nav-link">
+                    <a href="/services" className={getActiveLink("services")}>
                         Services
                     </a>
                     <div className="nav-item dropdown">
                         <a
                             href="#"
-                            className="nav-link dropdown-toggle"
+                            className={
+                                isActiveLink("team")
+                                    ? "nav-link dropdown-toggle active"
+                                    : "nav-link dropdown-toggle"
+                            }
                             data-bs-toggle="dropdown"
                         >
                             Pages
@@ -40,7 +54,14 @@ const MyNavbar = () => {
                             {/* <a href="/features" className="dropdown-item">
                                 Features
                             </a> */}
-                            <a href="/team" className="dropdown-item">
+                            <a
+                                href="/team"
+                                className={
+                                    isActiveLink("team")
+                                        ? "dropdown-item active"
+                                        : "dropdown-item"
+                                }
+                            >
                                 Our Team
                             </a>
                             <a
@@ -54,12 +75,16 @@ const MyNavbar = () => {
                             </a> */}
                         </div>
                     </div>
-                    <a href="contact.html" className="nav-item nav-link">
+                    {/* <a href="/contactUs" className="nav-item nav-link">
                         Contact
-                    </a>
+                    </a> */}
                 </div>
-                <a href="" className="btn btn-primary px-3 d-none d-lg-block">
-                    Get A Quote
+                <a
+                    href="/contactUs"
+                    className="btn btn-primary px-3 d-none d-lg-block"
+                >
+                    {/* Get A Quote */}
+                    Contact Us
                 </a>
             </div>
         </nav>

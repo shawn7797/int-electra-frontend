@@ -26,12 +26,12 @@ const Carousel = () => {
                                             Industrial Solution Providing
                                             Company
                                         </h1>
-                                        <a
+                                        {/* <a
                                             href=""
                                             class="btn btn-primary py-3 px-5 animated slideInRight"
                                         >
                                             Explore More
-                                        </a>
+                                        </a> */}
                                     </div>
                                 </div>
                             </div>
@@ -53,12 +53,12 @@ const Carousel = () => {
                                         <h1 class="display-1 text-white mb-5 animated slideInRight">
                                             The Best Reliable Industry Solution
                                         </h1>
-                                        <a
+                                        {/* <a
                                             href=""
                                             class="btn btn-primary py-3 px-5 animated slideInRight"
                                         >
                                             Explore More
-                                        </a>
+                                        </a> */}
                                     </div>
                                 </div>
                             </div>

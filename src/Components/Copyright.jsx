@@ -6,14 +6,17 @@ const Copyright = () => {
             <div class="container text-center">
                 <p class="mb-2">
                     Copyright &copy;{" "}
-                    <a class="fw-semi-bold" href="#">
+                    <a class="fw-semi-bold orange" href="#">
                         INT ELECTRA
                     </a>
                     <span> {new Date().getFullYear()}</span>
                 </p>
                 <p class="mb-0">
                     Designed By{" "}
-                    <a class="fw-semi-bold" href="https://shawn7797.github.io/">
+                    <a
+                        class="fw-semi-bold orange"
+                        href="https://shawn7797.github.io/"
+                    >
                         Shawn Mathias
                     </a>
                 </p>

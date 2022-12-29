@@ -6,6 +6,7 @@ import Team from "Components/Team";
 import Testimonials from "Components/Testimonials";
 import VideoModal from "Components/VideoModal";
 import React from "react";
+import ProductPartner from "./ProductPartner";
 
 const LandingPage = () => {
     return (
@@ -14,8 +15,9 @@ const LandingPage = () => {
             <Facts />
             <Features />
             <VideoModal />
-            <Projects />
-            <Team />
+            <ProductPartner />
+            {/* <Projects /> */}
+            {/* <Team /> */}
         </div>
     );
 };
