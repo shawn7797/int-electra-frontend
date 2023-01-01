@@ -64,25 +64,25 @@ const About = () => {
                             </div>
                         </div>
                         <div class="row pt-2">
-                            <div class="col-sm-6">
+                            <div class="col-sm-7">
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
                                         <i class="fa fa-envelope-open text-white"></i>
                                     </div>
                                     <div class="ms-3">
                                         <p class="mb-2">Email us</p>
-                                        <h5 class="mb-0">info@example.com</h5>
+                                        <h5 class="mb-0">reagendsouza@yahoo.com</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-4">
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
                                         <i class="fa fa-phone-alt text-white"></i>
                                     </div>
                                     <div class="ms-3">
                                         <p class="mb-2">Call us</p>
-                                        <h5 class="mb-0">+012 345 6789</h5>
+                                        <h5 class="mb-0">+919226269036</h5>
                                     </div>
                                 </div>
                             </div>
