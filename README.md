@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/023a4a59-574e-4266-881b-47fd668532af/deploy-status)](https://app.netlify.com/sites/intelectra/deploys)
+
 # int-electra-frontend
 # Getting Started with Create React App
 
