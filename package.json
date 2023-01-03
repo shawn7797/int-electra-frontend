@@ -31,7 +31,8 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
+    "build": "npm run clean && craco build",
+    "clean": "npx rimraf build",
     "test": "craco test --env jsdom",
     "react-scripts-test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
