@@ -1,4 +1,5 @@
 import React from "react";
+import "./my-navbar.style.less";
 
 const MyNavbar = () => {
     const activeLink =
@@ -25,6 +26,9 @@ const MyNavbar = () => {
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarCollapse">
+                <a href="https://www.wai.org.in/" target="_blank">
+                    <img src="/images/wai.jpeg" className="wai-logo" />
+                </a>
                 <div className="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="/" className={getActiveLink("")}>
                         Home
