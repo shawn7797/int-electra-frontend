@@ -9,7 +9,8 @@ const TopBar = () => {
                         <span>Follow Us:</span>
                         <a
                             className="btn btn-link text-light"
-                            href="https://www.facebook.com/settings?tab=profile&section=username"
+                            href="https://www.facebook.com/intelectragoa"
+                            target="_blank"
                         >
                             <i className="fab fa-facebook-f"></i>
                         </a>
