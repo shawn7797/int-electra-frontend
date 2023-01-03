@@ -17,7 +17,7 @@ const Carousel = () => {
                         />
                         <div class="carousel-caption">
                             <div class="container">
-                                <div class="row justify-content-center">
+                                <div class="row justify-content-center ms-5 me-5">
                                     <div class="col-lg-10 text-start">
                                         <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">
                                             25 Years of Working Experience
@@ -44,7 +44,7 @@ const Carousel = () => {
                         />
                         <div class="carousel-caption">
                             <div class="container">
-                                <div class="row justify-content-center">
+                                <div class="row justify-content-center ms-5 me-5">
                                     <div class="col-lg-10 text-start">
                                         <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">
                                             25 Years of Working Experience

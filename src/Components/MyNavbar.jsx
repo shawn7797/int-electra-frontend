@@ -1,4 +1,5 @@
 import React from "react";
+import { Breakpoint } from "react-socks";
 import "./my-navbar.style.less";
 
 const MyNavbar = () => {
@@ -27,7 +28,23 @@ const MyNavbar = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarCollapse">
                 <a href="https://www.wai.org.in/" target="_blank">
-                    <img src="/images/wai.jpeg" className="wai-logo" />
+                    <Breakpoint
+                        small
+                        down
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
+                    >
+                        <img
+                            src="/images/wai.jpeg"
+                            className="wai-logo-mobile"
+                        />
+                    </Breakpoint>
+                    <Breakpoint medium up>
+                        <img src="/images/wai.jpeg" className="wai-logo" />
+                    </Breakpoint>
                 </a>
                 <div className="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="/" className={getActiveLink("")}>

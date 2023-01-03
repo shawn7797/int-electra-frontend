@@ -1,4 +1,6 @@
 import React from "react";
+import { Breakpoint } from "react-socks";
+import "./team.style.less";
 
 const Team = () => {
     const team = [
@@ -41,51 +43,38 @@ const Team = () => {
                             class="col-lg-4 col-md-6 wow fadeInUp team-member-wrapper"
                             data-wow-delay="0.1s"
                         >
-                            <div class="team-item">
-                                <img
-                                    class="img-fluid"
-                                    src={i.image}
-                                    alt={i.name}
-                                />
-                                <div class="d-flex">
-                                    <div
-                                        class="flex-shrink-0 btn-square bg-primary"
-                                        style={{
-                                            width: "90px",
-                                            height: "90px",
-                                        }}
-                                    >
-                                        <i class="fa fa-2x fa-share text-white"></i>
-                                    </div>
-                                    <div
-                                        class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
-                                        style={{
-                                            height: "90px",
-                                        }}
-                                    >
-                                        <h5>{i.name}</h5>
-                                        <span class="text-primary">
-                                            {i.role}
-                                        </span>
-                                        <div class="team-social">
-                                            <a
-                                                class="btn btn-square btn-dark rounded-circle mx-1"
-                                                href={i.facebook}
-                                            >
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                            {i.email && (
+                            <Breakpoint small down>
+                                <div class="team-item-mobile">
+                                    <img
+                                        class="img-fluid"
+                                        src={i.image}
+                                        alt={i.name}
+                                    />
+                                    <div class="d-flex">
+                                        <div class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 bottom-div-wrapper">
+                                            <h5>{i.name}</h5>
+                                            <span class="text-primary">
+                                                {i.role}
+                                            </span>
+                                            <div class="team-social">
                                                 <a
                                                     class="btn btn-square btn-dark rounded-circle mx-1"
-                                                    href={`mailto:${i.email}`}
+                                                    href={i.facebook}
                                                 >
-                                                    <i
-                                                        class="fa fa-envelope"
-                                                        aria-hidden="true"
-                                                    ></i>
+                                                    <i class="fab fa-facebook-f"></i>
                                                 </a>
-                                            )}
-                                            {/* <a
+                                                {i.email && (
+                                                    <a
+                                                        class="btn btn-square btn-dark rounded-circle mx-1"
+                                                        href={`mailto:${i.email}`}
+                                                    >
+                                                        <i
+                                                            class="fa fa-envelope"
+                                                            aria-hidden="true"
+                                                        ></i>
+                                                    </a>
+                                                )}
+                                                {/* <a
                                                 class="btn btn-square btn-dark rounded-circle mx-1"
                                                 href=""
                                             >
@@ -97,10 +86,73 @@ const Team = () => {
                                             >
                                                 <i class="fab fa-instagram"></i>
                                             </a> */}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Breakpoint>
+                            <Breakpoint medium up>
+                                <div class="team-item">
+                                    <img
+                                        class="img-fluid"
+                                        src={i.image}
+                                        alt={i.name}
+                                    />
+                                    <div class="d-flex">
+                                        <div
+                                            class="flex-shrink-0 btn-square bg-primary"
+                                            style={{
+                                                width: "90px",
+                                                height: "90px",
+                                            }}
+                                        >
+                                            <i class="fa fa-2x fa-share text-white"></i>
+                                        </div>
+                                        <div
+                                            class="position-relative overflow-hidden bg-light d-flex flex-column justify-content-center w-100 ps-4"
+                                            style={{
+                                                height: "90px",
+                                            }}
+                                        >
+                                            <h5>{i.name}</h5>
+                                            <span class="text-primary">
+                                                {i.role}
+                                            </span>
+                                            <div class="team-social">
+                                                <a
+                                                    class="btn btn-square btn-dark rounded-circle mx-1"
+                                                    href={i.facebook}
+                                                >
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                                {i.email && (
+                                                    <a
+                                                        class="btn btn-square btn-dark rounded-circle mx-1"
+                                                        href={`mailto:${i.email}`}
+                                                    >
+                                                        <i
+                                                            class="fa fa-envelope"
+                                                            aria-hidden="true"
+                                                        ></i>
+                                                    </a>
+                                                )}
+                                                {/* <a
+                                                class="btn btn-square btn-dark rounded-circle mx-1"
+                                                href=""
+                                            >
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a
+                                                class="btn btn-square btn-dark rounded-circle mx-1"
+                                                href=""
+                                            >
+                                                <i class="fab fa-instagram"></i>
+                                            </a> */}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Breakpoint>
                         </div>
                     ))}
                     {/* <div

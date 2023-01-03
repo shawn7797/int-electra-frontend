@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BreakpointProvider } from 'react-socks';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './routes/app-route/app.route';
@@ -7,7 +8,9 @@ import App from './routes/app-route/app.route';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BreakpointProvider>
+      <App />
+    </BreakpointProvider>
   </React.StrictMode>
 );
 
