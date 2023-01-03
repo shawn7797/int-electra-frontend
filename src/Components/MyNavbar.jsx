@@ -85,12 +85,12 @@ const MyNavbar = () => {
                             >
                                 Our Team
                             </a>
-                            <a
+                            {/* <a
                                 href="testimonial.html"
                                 className="dropdown-item"
                             >
                                 Testimonial
-                            </a>
+                            </a> */}
                             {/* <a href="404.html" className="dropdown-item">
                                 404 Page
                             </a> */}
