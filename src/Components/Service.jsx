@@ -6,19 +6,75 @@ const Service = () => {
     const services = [
         {
             name: "Soil Stabilization",
-            description: "Description here",
+            description:
+                "Soil Stabilization using Green Mountain Polyurethane systems",
+            image1: "images/Services/Soil-Stabilization.jpeg",
+            image2: "images/Services/Soil-Stabilization.jpeg",
         },
         {
             name: "Waterproofing Solutions",
-            description: "Description here",
+            description: (
+                <ul>
+                    <li>
+                        Leakage arrestation using Polyurethane Grout solutions
+                    </li>
+                    <br />
+                    <li>Chemical Resistant Concrete coatings</li>
+                    <br />
+                    <li>Epoxy grouting</li>
+                    <br />
+                    <li>Polymer Injection</li>
+                    <br />
+                </ul>
+            ),
+            image1: "images/Services/WaterProofing1.jpg",
+            image2: "images/Services/WaterProofing2.jpg",
         },
         {
-            name: "CIVIL / ELECTRO MECHANICAL ENGINEERS",
-            description: "Description here",
+            name: "Civil/Electro Mechanical Engineering Works",
+            description: (
+                <ul>
+                    <li>
+                        Rehabilitation of heavy industrial structures by
+                        chemical treatment
+                    </li>
+                    <br />
+                    <li>Construction of steel foot over bridges</li>
+                </ul>
+            ),
+            image1: "images/Services/Civil1.jpg",
+            image2: "images/Services/Civil2.jpg",
+        },
+        {
+            name: "Structural works",
+            description: (
+                <ul>
+                    <li>Structural repairs and reinforcements</li>
+                    <br />
+                    <li>Carbon fibre wrapping of walls and pillars</li>
+                </ul>
+            ),
+            image1: "images/Services/Concrete1.jpg",
+            image2: "images/Services/Concrete2.jpg",
         },
         {
             name: "Specialized tailor made grout solutions for tunnels, dams, bridges and buildings",
             description: "Description here",
+            image1: "images/Services/WaterProofing1.jpg",
+            image2: "images/Services/WaterProofing1.jpg",
+        },
+        {
+            name: "Underwater rehabilitation works",
+            description: "Description here",
+            image1: "images/Services/WaterProofing1.jpg",
+            image2: "images/Services/WaterProofing1.jpg",
+        },
+        {
+            name: "Bearing destressing and replacement for bridges",
+            description:
+                "Destressing and replacement of Neoprene bearings for bridges under traffic conditions",
+            image1: "images/Services/Bearing2.jpg",
+            image2: "images/Services/Bearing1.jpg",
         },
     ];
 
@@ -50,13 +106,13 @@ const Service = () => {
                                     <div className="service-item">
                                         <img
                                             className="img-fluid"
-                                            src="img/service-1.jpg"
+                                            src={i.image2}
                                             alt=""
                                         />
                                         <div className="service-img">
                                             <img
                                                 className="img-fluid"
-                                                src="img/service-1.jpg"
+                                                src={i.image1}
                                                 alt=""
                                             />
                                         </div>
@@ -69,7 +125,7 @@ const Service = () => {
                                                 <hr className="w-25" />
                                             </div>
                                             <div className="service-text">
-                                                <p className="text-white mb-0">
+                                                <p className="text-white mb-0 left-align">
                                                     {i.description}
                                                 </p>
                                             </div>
@@ -186,13 +242,13 @@ const Service = () => {
                                     <div className="service-item">
                                         <img
                                             className="img-fluid"
-                                            src="img/service-1.jpg"
+                                            src={i.image2}
                                             alt=""
                                         />
                                         <div className="service-img">
                                             <img
                                                 className="img-fluid"
-                                                src="img/service-1.jpg"
+                                                src={i.image1}
                                                 alt=""
                                             />
                                         </div>
@@ -205,7 +261,7 @@ const Service = () => {
                                                 <hr className="w-25" />
                                             </div>
                                             <div className="service-text">
-                                                <p className="text-white mb-0">
+                                                <p className="text-white mb-0 left-align">
                                                     {i.description}
                                                 </p>
                                             </div>

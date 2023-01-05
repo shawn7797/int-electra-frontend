@@ -38,6 +38,10 @@ h6,
     font-weight: 500 !important;
 }
 
+.left-align {
+    text-align: left;
+}
+
 
 /*** Spinner ***/
 #spinner {
